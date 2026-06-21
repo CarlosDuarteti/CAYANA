@@ -1,0 +1,33 @@
+
+body{
+margin:0;
+background:url('arte-cayana-sem-qr-code.png') center center/cover no-repeat fixed;
+min-height:100vh;
+font-family:Arial,sans-serif;
+}
+.overlay{
+display:flex;justify-content:center;align-items:center;min-height:100vh;
+background:rgba(0,0,0,.25);
+}
+.card{
+background:rgba(255,255,255,.92);
+padding:30px;
+border-radius:25px;
+width:90%;
+max-width:420px;
+text-align:center;
+backdrop-filter:blur(8px);
+}
+.btn{
+display:block;
+padding:15px;
+margin:10px 0;
+border-radius:12px;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+}
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+.site{background:#1f2937;}
+.maps{background:#b8860b;}

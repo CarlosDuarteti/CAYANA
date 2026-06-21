@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title><img src="logo_cayana-sem-fundo.png"></title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header>
+<img src="logo_cayana.jpeg" class="logo">
+<nav>
+<a href="#produtos">Coleção</a>
+<a href="#" onclick="abrirCarrinho()">Carrinho</a>
+</nav>
+<div class="cart" onclick="abrirCarrinho()"><i class="fa fa-shopping-bag"></i><span id="contador">0</span></div>
+</header>
+
+<section class="hero">
+<div class="overlay">
+<h1>Elegância em Cada Passo</h1>
+<p>Exclusividade, sofisticação e conforto.</p>
+<a href="#produtos" class="btn">Comprar Agora</a>
+</div>
+</section>
+
+<section id="produtos" class="produtos">
+<h2>Coleção CAYANA</h2>
+<div class="grid">
+<div class="produto"><img src="img/sandalia1.jpeg"><h3>Sandália Premium</h3><p>R$ 149,90</p><button onclick="addCarrinho('Sandália Premium',149.90)">Adicionar</button></div>
+<div class="produto"><img src="img/sandalia2.jpeg"><h3>Mule Luxo</h3><p>R$ 129,90</p><button onclick="addCarrinho('Mule Luxo',129.90)">Adicionar</button></div>
+<div class="produto"><img src="img/sandalia3.jpeg"><h3>Off White Gold</h3><p>R$ 159,90</p><button onclick="addCarrinho('Off White Gold',159.90)">Adicionar</button></div>
+</div>
+</section>
+
+<div id="carrinho" class="drawer">
+<div class="drawer-content">
+<h2>Seu Carrinho</h2>
+<div id="itens"></div>
+<h3 id="total"></h3>
+<button class="whats" onclick="enviarWhatsapp()">Finalizar no WhatsApp</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body></html>

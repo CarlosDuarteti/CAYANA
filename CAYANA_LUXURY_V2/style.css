@@ -1,0 +1,20 @@
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f6efe7}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:#f8f1e8;z-index:10}
+.logo{height:60px}
+nav a{text-decoration:none;color:#111;margin:0 15px}
+.hero{height:100vh;background:url('arte.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center}
+.overlay{text-align:center;background:rgba(255,255,255,.65);padding:40px;border-radius:25px;backdrop-filter:blur(5px)}
+h1{font-size:60px}
+.btn,button{background:#111;color:#fff;border:none;padding:12px 25px;border-radius:40px;cursor:pointer}
+.produtos{padding:100px 5%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.produto{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.produto img{width:100%;height:300px;object-fit:cover}
+.produto h3,.produto p,.produto button{margin:15px}
+.cart{cursor:pointer;position:relative}
+.cart span{position:absolute;top:-10px;right:-10px;background:#000;color:#fff;border-radius:50%;padding:3px 8px}
+.drawer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6)}
+.drawer-content{position:absolute;right:0;top:0;height:100%;width:400px;background:#fff;padding:20px;overflow:auto}
+.whats{width:100%;background:#25D366}
