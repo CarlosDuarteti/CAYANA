@@ -6,4 +6,4 @@ function abrirCarrinho(){let h='',t=0;carrinho.forEach((i,x)=>{t+=i.preco*i.qtd;
 function mais(i){carrinho[i].qtd++;abrirCarrinho();atualizar();}
 function menos(i){carrinho[i].qtd--;if(carrinho[i].qtd<=0)carrinho.splice(i,1);abrirCarrinho();atualizar();}
 function rem(i){carrinho.splice(i,1);abrirCarrinho();atualizar();}
-function enviarWhatsapp(){let m='Novo Pedido%0A';carrinho.forEach(i=>m+=`${i.nome} x${i.qtd}%0A`);window.open('https://wa.me/5561999397357?text='+m)}
+function enviarWhatsapp(){let m='Novo Pedido%0A';carrinho.forEach(i=>m+=`${i.nome} x${i.qtd}%0A`);window.open('https://wa.me/5561981852114?text='+m)}
